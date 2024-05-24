@@ -1,4 +1,4 @@
-@baseUrl = https://localhost:8021
+@baseUrl = https://localhost:8001
 
 POST {{baseUrl}}/bf/api/keyword/define-keyword
 Content-Type: application/json
