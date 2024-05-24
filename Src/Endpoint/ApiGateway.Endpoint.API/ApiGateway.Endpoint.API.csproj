@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Yarp.ReverseProxy" Version="2.1.0" />
+		<PackageReference Include="Steeltoe.Discovery.Eureka" Version="3.2.6" />
+		<PackageReference Include="Swan.AspNetCore.App" Version="3.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\ApiGateway.Core.Domain\ApiGateway.Core.Domain.csproj" />
+		<ProjectReference Include="..\..\Core\ApiGateway.Core.Contract\ApiGateway.Core.Contract.csproj" />
+		<ProjectReference Include="..\..\Core\ApiGateway.Core.AppService\ApiGateway.Core.AppService.csproj" />
+		<ProjectReference Include="..\..\Data\ApiGateway.Data.Sql\ApiGateway.Data.Sql.csproj" />
+		<ProjectReference Include="..\..\Data\ApiGateway.Data.Sql.Command\ApiGateway.Data.Sql.Command.csproj" />
+		<ProjectReference Include="..\..\Data\ApiGateway.Data.Sql.Query\ApiGateway.Data.Sql.Query.csproj" />
+	</ItemGroup>
+
+</Project>

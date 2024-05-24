@@ -1,0 +1,17 @@
+@baseUrl = https://localhost:8021
+
+POST {{baseUrl}}/bf/api/keyword/define-keyword
+Content-Type: application/json
+
+{
+    "Title": "AI Sience" 
+}
+
+###
+
+Get {{baseUrl}}/bf/api/keyword/search?title=economic
+
+###
+@id = 1
+GET {{baseUrl}}/nm/api/news/get-news-detail/{{id}}
+Content-Type: application/json
